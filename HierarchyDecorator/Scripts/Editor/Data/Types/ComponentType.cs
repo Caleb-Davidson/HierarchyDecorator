@@ -10,6 +10,8 @@ namespace HierarchyDecorator
     {
         // Fields
 
+        private static readonly Texture DefaultScriptIcon = EditorGUIUtility.IconContent("cs Script Icon").image;
+        
         // --- Component information
 
         [SerializeField] protected string displayName;
@@ -215,6 +217,11 @@ namespace HierarchyDecorator
             {
                 string path = AssetDatabase.GetAssetPath(script);
                 texture = AssetDatabase.GetCachedIcon(path);
+            }
+            
+            if (texture == DefaultScriptIcon) 
+            {
+                return new GUIContent(GUIContent.none);
             }
 
             content.image = texture;
