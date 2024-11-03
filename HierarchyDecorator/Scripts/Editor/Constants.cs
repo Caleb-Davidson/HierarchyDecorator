@@ -11,10 +11,10 @@ namespace HierarchyDecorator
 
         public static string PREF_GUID = Application.productName + "_HD_GUID";
 
-        public const string SETTINGS_PATH = "Hierarchy Decorator";
+        public const string SETTINGS_PATH = "Preferences/Hierarchy Decorator";
 
-        public const string SETTINGS_ASSET_PATH = "Assets/HierarchyDecorator/Settings.asset";
-        public const string SETTINGS_ASSET_FOLDER = "Assets/HierarchyDecorator/";
+        public const string SETTINGS_ASSET_PATH = "Assets/Settings/HierarchyDecorator/Settings.asset";
+        public const string SETTINGS_ASSET_FOLDER = "Assets/Settings/HierarchyDecorator/";
 
         // ====== Colours ======
 
